@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Oltean_Andrei_Lab7.MainPage">
+             x:Class="Oltean_Andrei_Lab7.MainPage"
+             Title="Welcome">
 
     <ScrollView>
         <VerticalStackLayout
@@ -11,31 +12,25 @@
 
             <Image
                 Source="poza_max.jpg"
-                SemanticProperties.Description="Poza cu cainele meu"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Salut numele meu este Oltean Andrei."
+                Text="Salut, sunt Andrei!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Acesta este catelul meu, Max."
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome text"
+                Text="Acesta este cainele meu Max."
                 FontSize="18"
                 HorizontalOptions="Center" />
-
             <Button
                 x:Name="CounterBtn"
                 Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
